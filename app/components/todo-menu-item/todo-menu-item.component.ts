@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MenuItemBase } from 'src/app/models/MenuItemBase';
+import { TodoFolder } from 'src/app/models/todo-folder';
 
 @Component({
   selector: 'app-todo-menu-item',
@@ -7,7 +7,7 @@ import { MenuItemBase } from 'src/app/models/MenuItemBase';
   styleUrls: ['./todo-menu-item.component.css']
 })
 export class TodoMenuItemComponent implements OnInit {
-  @Input() menu_item_components?: MenuItemBase;
+  @Input() todo_folder?: TodoFolder;
 
   constructor() { }
 

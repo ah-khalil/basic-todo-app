@@ -1,16 +1,16 @@
 <div class="todo-list-item">
-    <div *ngIf="menu_item_components">
-        <div *ngIf="menu_item_components.is_composite(); else menu_item_leaf">
-            {{menu_item_components.label}}
-
-            <div *ngFor="let menu_item_component of menu_item_components.children">
-                <app-todo-menu-item [menu_item_components]="menu_item_component"></app-todo-menu-item>
+    <div *ngIf="todo_folder">
+        <div *ngIf="todo_folder.is_composite(); else todo_folder_leaf">
+            {{todo_folder.label}}
+            
+            <div *ngFor="let todo_subfolder of todo_folder.children">
+                <app-todo-menu-item [todo_folder]="todo_subfolder"></app-todo-menu-item>
             </div>
         </div>
 
-        <ng-template #menu_item_leaf>
+        <ng-template #todo_folder_leaf>
             <a href="#">
-                {{menu_item_components.label}}
+                {{todo_folder.label}}
             </a>
         </ng-template>
     </div>
