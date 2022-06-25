@@ -1,0 +1,7 @@
+<div class="todo-list">
+    <ul>
+        <li *ngFor="let menuItem of menuItems">
+            <app-todo-menu-item [menu_item_components]="menuItem"></app-todo-menu-item>
+        </li>
+    </ul>
+</div>

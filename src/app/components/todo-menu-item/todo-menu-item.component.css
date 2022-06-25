@@ -1,0 +1,26 @@
+.todo-list-item{
+    margin: 5px;
+    margin-left: 10px;
+    border: 1px solid red;
+    overflow: auto;
+  }
+  
+  .todo-list-item-id-container{
+    float: left;
+    border-right: 2px solid black;
+  }
+  
+  .todo-list-item-id{
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+  
+  .todo-list-item-title-container{
+    /* float: right;
+    margin-right: 10px; */
+    text-align: center;
+  }
+  
+  .todo-list-item-title{
+    /* margin-left: 3px; */
+  }
