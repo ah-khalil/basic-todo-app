@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderBannerComponent } from './components/header-banner/header-banner.component';
 import { TodoMenuComponent } from './components/todo-menu/todo-menu.component';
 import { TodoMenuItemComponent } from './components/todo-menu-item/todo-menu-item.component';
-import { TodoListContainerComponent } from './todo-list-container/todo-list-container.component';
+import { TodoListContainerComponent } from './components/todo-list-container/todo-list-container.component';
 
 @NgModule({
   declarations: [
