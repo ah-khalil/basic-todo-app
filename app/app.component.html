@@ -1,4 +1,17 @@
-<app-header-banner></app-header-banner>
-<app-todo-menu></app-todo-menu>
-<app-todo-list-container></app-todo-list-container>
-<router-outlet></router-outlet>
+<div class="container-fluid">
+    <app-header-banner></app-header-banner>
+    
+    <div class="row">
+        <div class="col-2">
+            <app-todo-menu></app-todo-menu>
+        </div>
+        <div class="col-6">
+            <app-todo-list-container></app-todo-list-container>
+        </div>
+        <div class="col-3">
+            <div style="width: 100%"></div>
+        </div>
+    </div>
+    
+    <router-outlet></router-outlet>
+</div>

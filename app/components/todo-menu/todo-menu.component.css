@@ -5,8 +5,7 @@ ul{
 
 .todo-list{
   height: 100%;
-  width: 15%;
-  position: fixed;
+  /* position: fixed; */
   overflow: auto;
   box-shadow: 5px 10px grey;
 }

@@ -1,1 +1,7 @@
-<p>todo-list-container works!</p>
+<div id="todo-list-container">
+    <ul>
+        <li *ngFor="let todo_item of todoList">
+            <app-todo-list-item [todoItem]="todo_item"></app-todo-list-item>
+        </li>
+    </ul>
+</div>
