@@ -1,4 +1,10 @@
 <div id="todo-list-container">
+    <div class="subsection-title">
+        <h2>
+            <b><span>TASKS</span></b>
+        </h2>
+    </div>
+
     <ul>
         <li *ngFor="let todo_item of todoList">
             <app-todo-list-item [todoItem]="todo_item"></app-todo-list-item>

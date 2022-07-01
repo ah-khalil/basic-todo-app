@@ -2,4 +2,9 @@ body {
     height: 100%;
     overflow: hidden;
 }
+
+ul{
+    padding: 0;
+    list-style-type: none;
+  }
 /* You can add global styles to this file, and also import other style files */

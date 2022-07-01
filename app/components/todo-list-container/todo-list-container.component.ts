@@ -7,7 +7,7 @@ import { Todo } from 'src/app/models/todo';
   styleUrls: ['./todo-list-container.component.css']
 })
 export class TodoListContainerComponent implements OnInit {
-  todoList: Array<Todo>;
+  todoList: Array<Todo> = [];
 
   constructor() {
     this.todoList.push(
@@ -20,7 +20,7 @@ export class TodoListContainerComponent implements OnInit {
       new Todo("Todo Item 7", "This is a test todo item"),
       new Todo("Todo Item 8", "This is a test todo item"),
       new Todo("Todo Item 9", "This is a test todo item"),
-    )
+    );
    }
 
   ngOnInit(): void {
